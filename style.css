@@ -515,9 +515,8 @@ input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 15px;
-    width: 100%;
     background-color: #f8f8f8;
-    width: 100%;
+    font-family: "MontSerrat";
 }
 
 @media (max-width: 991px) {

@@ -6,6 +6,15 @@
     margin: 0;
     padding: 0;
 }
+
+#navbar {
+  transition: top 100 ease-in-out;
+}
+
+.hide {
+  top: -100px;
+}
+
 .navigation-container {
   justify-content: center;
   align-items: center;
@@ -19,7 +28,7 @@
   background: rgba(255, 255, 255, 0.2) !important;
   z-index: 2;
   backdrop-filter: blur(10px) saturate(125%);
-  position: absolute;
+  position: fixed;
   width: 100%;
 }
 

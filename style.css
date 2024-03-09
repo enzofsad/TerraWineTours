@@ -201,7 +201,7 @@
 
 
 .location-image {
-  width: 235px;
+  width: 300px;
   aspect-ratio: 1;
   object-fit: auto;
   object-position: center;
@@ -220,7 +220,7 @@
   text-align: center;
   text-transform: uppercase;
   font: 700 18px Montserrat, sans-serif;
-  width: 235px;
+  width: 300px;
 }
 
 @media (max-width: 991px) {
@@ -230,11 +230,11 @@
 }
 
 .location-description {
-  margin: 22px 0 0 147px;
+  margin: 22px 0 0 160px;
   color: #787878;
   text-align: center;
   font: 14px Montserrat, sans-serif;
-  width: 261px;
+  width: 300px;
 }
 
 @media (max-width: 991px) {
@@ -246,9 +246,9 @@
 .location-info-container {
   display: flex;
   justify-content: space-between;
-  margin: 22px 0 0 147px;
+  margin: 22px 0 0 160px;
   font-size: 12px;
-  width: 261px;
+  width: 300px;
 }
 
 @media (max-width: 991px) {

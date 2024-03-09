@@ -159,6 +159,7 @@
   overflow: hidden;
   position: relative;
   align-items: flex-start;
+  justify-content: center;
   font-weight: 500;
   padding: 80px;
   color: #301d19;

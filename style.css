@@ -108,7 +108,7 @@
 }
 @media screen and (max-width: 1023px) {
   .banner-headline{
-    margin-left: 0;
+    margin: 0 10vw;
   }
 }
 
@@ -187,10 +187,29 @@
   height: 100vh;
 }
 
+@media screen and (max-width: 1023px) {
+  .location-container{
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .maipu{
+    background-image: url(./resources/imgs/toursmobile.png);
+  }
+}
+
 .maipu {
   background-image: url(./resources/imgs/mapamaipu.png);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .maipu{
+    background-image: url(./resources/imgs/toursmobile.png);
+  }
 }
 
 .vdu {
@@ -199,10 +218,22 @@
   background-position: center;
 }
 
+@media screen and (max-width: 1023px) {
+  .vdu{
+    background-image: url(./resources/imgs/toursmobile.png);
+  }
+}
+
 .maipu {
   background-image: url(./resources/imgs/mapamaipu.png);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .maipu{
+    background-image: url(./resources/imgs/toursmobile.png);
+  }
 }
 
 .location-image {
@@ -214,12 +245,25 @@
   margin: 10px 0 0 12vw;
 }
 
+@media screen and (max-width: 1023px) {
+  .location-image{
+    width: 175px;
+    margin: 0 auto;
+  }
+}
+
 .location-name {
   margin: 22px 0 0 12vw;
   text-align: center;
   text-transform: uppercase;
   font: 700 18px Montserrat, sans-serif;
   width: 300px;
+}
+
+@media screen and (max-width: 1023px) {
+  .location-name{
+    margin: 22px auto 0 auto;
+  }
 }
 
 .location-description {
@@ -230,12 +274,24 @@
   width: 300px;
 }
 
+@media screen and (max-width: 1023px) {
+  .location-description{
+    margin: 22px auto 0 auto;
+  }
+}
+
 .location-info-container {
   display: flex;
   justify-content: space-between;
   margin: 22px 0 0 12vw;
   font-size: 12px;
   width: 300px;
+}
+
+@media screen and (max-width: 1023px) {
+  .location-info-container{
+    margin: 22px auto 0 auto;
+  }
 }
 
 .location-info-item {
@@ -263,6 +319,12 @@
   align-items: center;
   justify-content: center;
   height: 370px;
+}
+
+@media screen and (max-width: 1023px) {
+  .vehicle-container{
+    height: 100vw;
+  }
 }
 
 .vehicle-option {
@@ -320,7 +382,9 @@
 }
 @media screen and (max-width: 1023px) {
   .options-wrapper{
+    height: 384px;
     margin: 10vw;
+    justify-content: space-around;
   }
 }
 
@@ -333,8 +397,8 @@
 }
 @media screen and (max-width: 1023px) {
   .option-column{
-    width: 50%;
-    height: 148px;
+    width: 40%;
+    height: 150px;
   }
 }
 
@@ -345,6 +409,12 @@
   justify-content: center;
   background-color: #f8f8f8;
   height: 370px;
+}
+
+@media screen and (max-width: 1023px) {
+  .profile-container{
+    height: 100vh;
+  }
 }
 
 .profile-wrapper {
@@ -531,15 +601,40 @@ input[type="text"] {
   height: 370px;
   margin: 0;
 }
+@media screen and (max-width: 1023px) {
+  .footer{
+    height: 100vh;
+    padding: 200px 10vh;
+    justify-content: center;
+  }
+}
 
 .footerlogo {
   height: 285px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footerlogo{
+    width: 80%;
+    order: 1;
+  }
 }
 
 .socials {
   margin: 2px 0 0 5px;
   color: #F4EEB8;
   font-family: "MontSerrat";
+}
+
+@media screen and (max-width: 1023px) {
+  .whatsapplogo{
+    order: 2;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .iglogo{ 
+    order: 3;
+  }
 }
 
 .copyright {

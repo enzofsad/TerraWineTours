@@ -16,6 +16,7 @@
   top: -100px;
 }
 
+
 .navigation-container {
   justify-content: center;
   align-items: center;
@@ -37,6 +38,7 @@
   width: 100%;
   margin: 0 20vw;
   padding: 0;
+  justify-content: space-between;
 }
 
 .logo-image {
@@ -48,6 +50,9 @@
 }
 
 .menu-items-container {
+  font-family: "MontSerrat";
+  font-size: 17px;
+  font-weight: 600;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -56,6 +61,8 @@
 @media screen and (max-width: 1023px) {
   .menu-items-container{
     align-items: center;
+    margin: 20px !important;
+    gap: 50px !important;
   }
 }
 
@@ -65,22 +72,36 @@
   color: #301d19;
 }
 
+.parallax-wrapper{
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
 .banner-container {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  min-height: 100vh;
-  justify-content: space-between;
+  justify-content: center;
   color: var(--Principal, #301d19);
   font-weight: 500;
   line-height: 100%;
-  background-image: url(./resources/imgs/HEADER.png);
-  background-size: cover;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
 @media screen and (max-width: 1023px) {
   .banner-container{
     text-align: center;
   }
+}
+
+.background{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  transform: translateZ(-5px) scale(1.5);
 }
 
 .banner-content {
@@ -89,13 +110,11 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  padding-top: 250px;
 }
 
 @media screen and (max-width: 1023px) {
   .banner-content{
     align-items: center;
-    padding-top: 30vh;
   }
 }
 
@@ -106,9 +125,11 @@
   max-width: 100%;
   flex-direction: column;
 }
+
 @media screen and (max-width: 1023px) {
   .banner-headline{
     margin: 0 10vw;
+    align-items: center;
   }
 }
 
@@ -120,6 +141,12 @@
 .banner-subtitle {
   margin-top: 25px;
   font: 16px Montserrat, sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .banner-subtitle{
+    width: 60vw;
+  }
 }
 
 .banner-button {
@@ -143,20 +170,18 @@
 }
 
 .whatsapp-container {
-  display: flex;
   padding: 17px;
   max-width: 60px;
   backdrop-filter: blur(2.5px);
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
-  margin-right: 70px;
-  margin-bottom: 30px;
-  align-self: flex-end;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
 }
 @media screen and (max-width: 1023px) {
   .whatsapp-container{
-    margin-right: 20px;
-    margin-bottom: 20px;
+    right: 20px;
   }
 }
 
@@ -263,6 +288,7 @@
 @media screen and (max-width: 1023px) {
   .location-name{
     margin: 22px auto 0 auto;
+    width: auto;
   }
 }
 
@@ -277,6 +303,7 @@
 @media screen and (max-width: 1023px) {
   .location-description{
     margin: 22px auto 0 auto;
+    width: auto;
   }
 }
 
@@ -291,6 +318,7 @@
 @media screen and (max-width: 1023px) {
   .location-info-container{
     margin: 22px auto 0 auto;
+    width: auto;
   }
 }
 
@@ -332,8 +360,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  width: 15vw;
-  height: 15vw;
+  width: 100%;
+  height: 100%;
   background-color: #f8f8f8;
   border-radius: 100%;
   font-size: 10px;
@@ -378,7 +406,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   margin: 0 20vw;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 1023px) {
   .options-wrapper{
@@ -393,7 +424,8 @@
   flex-direction: column;
   align-items: center;
   line-height: normal;
-  width: 25%;
+  width: 20%;
+  height: 12vw;
 }
 @media screen and (max-width: 1023px) {
   .option-column{
@@ -408,12 +440,12 @@
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
-  height: 370px;
+  padding: 10vh;
 }
 
 @media screen and (max-width: 1023px) {
   .profile-container{
-    height: 100vh;
+    padding: 0;
   }
 }
 
@@ -422,6 +454,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 20vw;
+  justify-content: center;
 }
 @media screen and (max-width: 1023px) {
   .profile-wrapper{

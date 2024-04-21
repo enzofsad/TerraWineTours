@@ -20,8 +20,6 @@
 .navigation-container {
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(6px);
-  background-color: rgba(0, 0, 0, 0.01);
   display: flex;
   font-size: 12px;
   color: var(--Principal, #301d19);

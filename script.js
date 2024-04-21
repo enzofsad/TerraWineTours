@@ -1,15 +1,12 @@
-var lastScrollTop = 0;
+let prevScrollPos = document.getElementById('content').scrollTop;
+const navbar = document.getElementById('navbar');
 
-window.addEventListener("scroll", function() {
-  var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (currentScroll > lastScrollTop) {
-    // Scroll down
-    document.getElementById("navbar").classList.add("hide");
+document.getElementById('content').onscroll = function() {
+  let currentScrollPos = document.getElementById('content').scrollTop;
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = '0';
   } else {
-    // Scroll up
-    document.getElementById("navbar").classList.remove("hide");
+    navbar.style.top = `-${navbar.offsetHeight}px`;
   }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+  prevScrollPos = currentScrollPos;
+}

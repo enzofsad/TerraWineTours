@@ -51,7 +51,7 @@
 
 .menu-items-container {
   font-family: "MontSerrat";
-  font-size: 17px;
+  font-size: 12px;
   font-weight: 600;
   display: flex;
   justify-content: space-between;
@@ -160,7 +160,7 @@
   text-align: center;
   letter-spacing: -0.48px;
   padding: 9px 20px;
-  font: 600 12px Montserrat, sans-serif;
+  font: 700 12px Montserrat, sans-serif;
   cursor: pointer;
 }
 @media screen and (max-width: 1023px) {
@@ -281,7 +281,7 @@
   margin: 22px 0 0 12vw;
   text-align: center;
   text-transform: uppercase;
-  font: 700 18px Montserrat, sans-serif;
+  font: 800 18px Montserrat, sans-serif;
   width: 300px;
 }
 
@@ -335,11 +335,16 @@
 
 .location-info-text {
   font-family: Montserrat, sans-serif;
-  width: 60px;
+  width: 100%;
 }
 
 .bold-text {
   font-weight: 700;
+}
+
+.jump{
+  display: flex;
+  width: 100%;
 }
 
 .vehicle-container {
@@ -377,14 +382,13 @@
 }
 
 .vehicle-title {
-  font-family: Montserrat, sans-serif;
-  font-size: 12px;
+  font: 700 10px Montserrat, sans-serif;
   margin-bottom: 0;
   margin-top: 5px;
 }
 
 .passenger-info {
-  font-family: Montserrat, sans-serif;
+  font: 700 10px Montserrat, sans-serif;
   margin-left: 5px;
 }
 
@@ -453,7 +457,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20vw;
+  margin: 0 15vw;
   justify-content: center;
 }
 @media screen and (max-width: 1023px) {
@@ -506,19 +510,16 @@
 }
 
 .profile-name {
-  font-size: 40px;
-  font-weight: 500;
+  font: 500 40px Montserrat, sans-serif;
   line-height: 100%;
-  font-family: "MontSerrat";
   margin-bottom: 0px;
 }
 
 .profile-role {
-  font-size: 16px;
+  font: 600 16px Montserrat, sans-serif;
   color: #787878;
   font-style: italic;
   margin: auto 0 0 16px;
-  font-family: "MontSerrat";
 }
 @media screen and (max-width: 1023px) {
   .profile-role{
@@ -542,8 +543,8 @@
 }
 
 .profile-description {
+  font: 14px Montserrat, sans-serif;
   color: #787878;
-  font-size: 14px;
 }
 
 .contact-container {
@@ -596,14 +597,14 @@
 .description-text {
   font-family: Montserrat, sans-serif;
   font-style: italic;
-  padding: 30px;
-  width: 100%;
+  padding: 30px 30px 180px 30px;
+  width: 60vw;
   height: 300px;
   border-radius: 30px;
+  border-color: transparent;
   background-color: #f8f8f8;
   margin-top: 15px;
-  color: #bfbfbf;
-  text-align: center;
+  white-space: pre-wrap;
 }
 
 .query-button {
@@ -620,7 +621,7 @@
   width: 100%;
 }
 
-input[type="text"] {
+.value-input{
   padding: 10px;
   border: none;
   border-radius: 15px;

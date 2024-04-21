@@ -51,20 +51,20 @@
                 <img loading="lazy" src="./resources/imgs/distanceicon.svg" alt="Distance Icon"
                   class="location-info-icon" />
                 <div class="location-info-text">
-                  <span class="bold-text">20km</span> de Mendoza
+                  <span class="bold-text jump">20km</span> de Mendoza
                 </div>
               </div>
               <div class="location-info-item">
                 <img loading="lazy" src="./resources/imgs/clockicon.svg" alt="Time Icon" class="location-info-icon" />
                 <div class="location-info-text">
-                  <span class="bold-text">2:30h</span> de viaje
+                  <span class="bold-text jump">2:30h</span> de viaje
                 </div>
               </div>
               <div class="location-info-item">
                 <img loading="lazy" src="./resources/imgs/altitudeicon.svg" alt="Altitude Icon"
                   class="location-info-icon" />
                 <div class="location-info-text">
-                  <span class="bold-text">2.535km</span> de altura
+                  <span class="bold-text jump">2.535km</span> de altura
                 </div>
               </div>
             </div>
@@ -181,24 +181,30 @@
     </section>
     <section class="contact-container">
       <h1 class="contact-title">Contactanos</h1>
-      <div class="info-section">
-        <div class="info-box">
-          <input type="text" aria-label="Cantidad de pasajeros" placeholder="Cantidad de pasajeros">
+      <form action="https://getform.io/f/pbqgqqvb" method="post">
+        <div class="info-section">
+          <div class="info-box">
+          <input class="value-input" type="number" aria-label="Cantidad de pasajeros" placeholder="Cantidad de pasajeros">
+        </div>
+        <div>
+          <select class="value-input" name="Zona" class="info-box">
+            <option value="Maipú">Maipú</option>
+            <option value="Luján de Cuyo">Luján de Cuyo</option>
+            <option value="Valle de Uco">Valle de Uco</option>
+          </select>
         </div>
         <div class="info-box">
-          <input type="text" aria-label="Zona" placeholder="Zona">
+          <input class="value-input" type="datetime-local" aria-label="Check-in" placeholder="Check-in">
         </div>
         <div class="info-box">
-          <input type="text" aria-label="Check-in" placeholder="Check-in">
-        </div>
-        <div class="info-box">
-          <input type="text" aria-label="Check-out" placeholder="Check-out">
+          <input class="value-input" type="datetime-local" aria-label="Check-out" placeholder="Check-out">
         </div>
       </div>
-      <div class="description-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-      </div>
-      <button class="query-button" tabindex="0">Consultar</button>
+        <div>
+          <input class="description-text" type="text" name="Comment" placeholder="Comentario">
+        </div>
+        <button type="submit" class="query-button">Consultar</button>
+      </form>
     </section>
     <footer class="row align-items-center footer">
       <div class="col d-flex justify-content-center whatsapplogo">

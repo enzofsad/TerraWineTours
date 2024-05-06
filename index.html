@@ -10,24 +10,24 @@
 </head>
 
 <body>
-  <div class="parallax-wrapper" id="content">
-    <nav id="navbar" class="navigation-container navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid logo-and-menu-container">
-        <img src="./resources/imgs/logonav.svg" alt="Company Logo" class="logo-image" />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav menu-items-container">
-            <a class="nav-link" aria-current="page" href="#">Wine Tours</a>
-            <a class="nav-link" href="#">About Us</a>
-            <a class="nav-link" href="#">Reserve</a>
-            <a class="nav-link" href="#">Banderita</a>
-          </div>
+  <nav id="navbar" class="navigation-container navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid logo-and-menu-container">
+      <img src="./resources/imgs/logonav.svg" alt="Company Logo" class="logo-image" />
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav menu-items-container">
+          <a class="nav-link" aria-current="page" href="#">Wine Tours</a>
+          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#">Reserve</a>
+          <a class="nav-link" href="#">Banderita</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+  <div class="parallax-wrapper" id="content">
     <section class="banner-container">
       <img src="./resources/imgs/HEADER.png" alt="vistapanorámica" class="background">
       <div class="banner-content">
@@ -181,10 +181,10 @@
     </section>
     <section class="contact-container">
       <h1 class="contact-title">Contactanos</h1>
-      <form action="https://getform.io/f/pbqgqqvb" method="post">
+      <form action="https://formsubmit.co/415f7d633539f49468a18cd425eefaaf" method="post">
         <div class="info-section">
           <div class="info-box">
-          <input class="value-input" type="number" aria-label="Cantidad de pasajeros" placeholder="Cantidad de pasajeros">
+          <input class="value-input" type="number" name="Cantidad de Pasajeros" aria-label="Cantidad de pasajeros" placeholder="Cantidad de pasajeros">
         </div>
         <div>
           <select class="value-input" name="Zona" class="info-box">
@@ -194,14 +194,14 @@
           </select>
         </div>
         <div class="info-box">
-          <input class="value-input" type="datetime-local" aria-label="Check-in" placeholder="Check-in">
+          <input class="value-input" type="datetime-local" name="Check-in" aria-label="Check-in" placeholder="Check-in">
         </div>
         <div class="info-box">
-          <input class="value-input" type="datetime-local" aria-label="Check-out" placeholder="Check-out">
+          <input class="value-input" type="datetime-local" name="Check-out" aria-label="Check-out" placeholder="Check-out">
         </div>
       </div>
         <div>
-          <input class="description-text" type="text" name="Comment" placeholder="Comentario">
+          <input class="description-text" type="text" name="Comentario" placeholder="Comentario">
         </div>
         <button type="submit" class="query-button">Consultar</button>
       </form>

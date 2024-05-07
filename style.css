@@ -69,7 +69,18 @@
   text-decoration: none;
   color: #301d19;
 }
-
+.dropdown-toggle{
+  padding-top: 5px;
+}
+.dropdown-toggle::after{
+  content: none;
+}
+.dropdown-item{
+  font: 700 12px Montserrat, sans-serif
+}
+.dropdown-flag{
+  margin-right: 5px;
+}
 .parallax-wrapper{
   height: 100vh;
   overflow-y: auto;

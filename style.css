@@ -9,7 +9,7 @@
 }
 
 #navbar {
-  transition: top 100 ease-in-out;
+  transition: ease-out;
 }
 
 .hide {

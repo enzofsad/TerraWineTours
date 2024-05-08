@@ -70,16 +70,20 @@
   color: #301d19;
 }
 .dropdown-toggle{
-  padding-top: 5px;
+  padding-top: 6px;
 }
 .dropdown-toggle::after{
   content: none;
 }
 .dropdown-item{
-  font: 700 12px Montserrat, sans-serif
+  font: 700 12px Montserrat, sans-serif;
 }
 .dropdown-flag{
   margin-right: 5px;
+}
+.flag{
+  height: 15px;
+  width: 25px;
 }
 .parallax-wrapper{
   height: 100vh;
@@ -258,14 +262,26 @@
   }
 }
 
-.maipu {
-  background-image: url(./resources/imgs/mapamaipu.png);
+.lujan {
+  background-image: url(./resources/imgs/mapalujan.png);
   background-size: cover;
   background-position: center;
 }
 
 @media screen and (max-width: 1023px) {
-  .maipu{
+  .lujan{
+    background-image: url(./resources/imgs/toursmobile.png);
+  }
+}
+
+.altamontaña {
+  background-image: url(./resources/imgs/mapaaltamontaña.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .altamontaña{
     background-image: url(./resources/imgs/toursmobile.png);
   }
 }
@@ -443,7 +459,7 @@
 @media screen and (max-width: 1023px) {
   .option-column{
     width: 40%;
-    height: 150px;
+    height: 120px;
   }
 }
 
@@ -537,7 +553,9 @@
 }
 
 .contact-button {
+  font: 600 12px Montserrat, sans-serif;
   border: 2px solid #301d19;
+  align-content: center;
   border-radius: 40px;
   padding: 5px 16px;
   background-color: rgba(0, 0, 0, 0.01);
@@ -594,13 +612,22 @@
 
 .info-box {
   display: flex;
-  border-radius: 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f8f8f8;
+  align-items: center;
+  padding: 10px;
 }
 
 .info-text {
   font-family: Montserrat, sans-serif;
   font-style: italic;
   flex-grow: 1;
+}
+
+.contact-icons{
+  height: 16px;
+  margin: 0px 5px 0px 5px;
 }
 
 .description-text {
@@ -630,7 +657,6 @@
 }
 
 .value-input{
-  padding: 10px;
   border: none;
   border-radius: 15px;
   background-color: #f8f8f8;

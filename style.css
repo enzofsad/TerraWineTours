@@ -212,6 +212,13 @@
   font-weight: 700;
 }
 
+.location-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  justify-content: space-between;
+}
 .location-container {
   display: flex;
   flex-direction: column;
@@ -220,9 +227,9 @@
   align-items: flex-start;
   justify-content: center;
   font-weight: 500;
-  padding: 80px 60px 80px 60px;
+  padding: 80px 20vw 80px 20vw;
   color: #301d19;
-  height: 100vh;
+  height: 75vh;
 }
 
 @media screen and (max-width: 1023px) {
@@ -232,14 +239,8 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .maipu{
-    background-image: url(./resources/imgs/toursmobile.png);
-  }
-}
-
 .maipu {
-  background-image: url(./resources/imgs/mapamaipu.png);
+  background-image: url(./resources/imgs/mapamaipu.svg);
   background-size: cover;
   background-position: center;
 }
@@ -287,12 +288,12 @@
 }
 
 .location-image {
-  width: 300px;
+  width: 235px;
   aspect-ratio: 1;
   object-fit: auto;
   object-position: center;
   border-radius: 50%;
-  margin: 10px 0 0 12vw;
+  margin: 0 auto 0 auto;
 }
 
 @media screen and (max-width: 1023px) {
@@ -303,11 +304,11 @@
 }
 
 .location-name {
-  margin: 22px 0 0 12vw;
   text-align: center;
   text-transform: uppercase;
   font: 800 18px Montserrat, sans-serif;
   width: 300px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -318,11 +319,11 @@
 }
 
 .location-description {
-  margin: 22px 0 0 12vw;
   color: #787878;
   text-align: center;
   font: 14px Montserrat, sans-serif;
-  width: 300px;
+  width: 320px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -335,7 +336,6 @@
 .location-info-container {
   display: flex;
   justify-content: space-between;
-  margin: 22px 0 0 12vw;
   font-size: 12px;
   width: 300px;
 }
@@ -407,13 +407,13 @@
 }
 
 .vehicle-title {
-  font: 700 10px Montserrat, sans-serif;
+  font: 700 11px Montserrat, sans-serif;
   margin-bottom: 0;
   margin-top: 5px;
 }
 
 .passenger-info {
-  font: 700 10px Montserrat, sans-serif;
+  font: 700 11px Montserrat, sans-serif;
   margin-left: 5px;
 }
 
@@ -422,8 +422,17 @@
   object-fit: cover;
 }
 
-.vehicle-image {
-  max-width: 100px;
+.vehicle-image1 {
+  max-width: 111px;
+}
+.vehicle-image2 {
+  max-width: 111px;
+}
+.vehicle-image3 {
+  max-width: 125px;
+}
+.vehicle-image4 {
+  max-width: 135px;
 }
 
 .passenger-info-container {
@@ -469,7 +478,7 @@
   align-items: center;
   justify-content: center;
   background-color: #f8f8f8;
-  padding: 10vh;
+  padding: 10vh 20vw;
 }
 
 @media screen and (max-width: 1023px) {
@@ -478,13 +487,6 @@
   }
 }
 
-.profile-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 15vw;
-  justify-content: center;
-}
 @media screen and (max-width: 1023px) {
   .profile-wrapper{
     margin: 0 10vw;
@@ -495,6 +497,7 @@
   display: flex;
   gap: 20px;
   margin: 32px 0;
+  width: 100%;
 }
 @media screen and (max-width: 1023px) {
   .profile-content{
@@ -515,6 +518,7 @@
   display: flex;
   flex-direction: column;
   margin: auto 0 auto 40px;
+  width: 100%;
 }
 @media screen and (max-width: 1023px) {
   .profile-info{
@@ -570,8 +574,9 @@
 }
 
 .profile-description {
-  font: 14px Montserrat, sans-serif;
+  font: 500 14px Montserrat, sans-serif;
   color: #787878;
+  width: 550px;
 }
 
 .contact-container {
@@ -586,7 +591,7 @@
   font-size: 11px;
   line-height: 100%;
   margin: 0 20vw 0 20vw;
-  height: 100vh;
+  height: 65vh;
 }
 
 .contact-title {
@@ -614,9 +619,9 @@
   display: flex;
   border: none;
   border-radius: 15px;
-  background-color: #f8f8f8;
   align-items: center;
-  padding: 10px;
+
+  width: 100%;
 }
 
 .info-text {
@@ -633,7 +638,7 @@
 .description-text {
   font-family: Montserrat, sans-serif;
   font-style: italic;
-  padding: 30px 30px 200px 30px;
+  padding: 30px 30px 300px 30px;
   width: 60vw;
   border-radius: 30px;
   border-color: transparent;
@@ -660,7 +665,9 @@
   border: none;
   border-radius: 15px;
   background-color: #f8f8f8;
-  font-family: "MontSerrat";
+  padding: 10px;
+  font-family: Montserrat, sans-serif;
+  font-style: italic;
   width: 100%;
 }
 

@@ -53,9 +53,10 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <section class="location-container maipu">
+            <div class="location-item">
             <img loading="lazy" src="./resources/imgs/maipu.png" alt="Maipú" class="location-image" />
-            <h2 class="location-name">maipú</h2>
-            <p class="location-description">Llamada también la “Cuna del Vino” donde numerosas bodegas nos ofrecen el
+            <p class="location-name">maipú</p>
+            <p class="location-description">Llamada también la <span class="bold-text">“Cuna del Vino”</span> donde numerosas bodegas nos ofrecen el
               placer soñado de cada uno de nuestros sentidos, sus texturas intensas, matices, aromas y sabores
               sofisticados, generan un contexto completo para la degustación de sus vinos.</p>
             <div class="location-info-container">
@@ -80,12 +81,13 @@
                 </div>
               </div>
             </div>
+          </div>
           </section>
         </div>
         <div class="carousel-item">
           <section class="location-container vdu">
             <img loading="lazy" src="./resources/imgs/vduco.png" alt="Valle de Uco" class="location-image" />
-            <h2 class="location-name">Valle de Uco</h2>
+            <p class="location-name">Valle de Uco</p>
             <p class="location-description">Deambular por sus caminos significa internarse en un laberinto de kilómetros
               de las plantaciones de vides, lomadas increíbles y la historia viva de sus vinos.
               Valle de Uco es una región innovadora de la industria vitivinícola, especializada en vinos de altura.</p>
@@ -116,7 +118,7 @@
         <div class="carousel-item">
           <section class="location-container lujan">
             <img loading="lazy" src="./resources/imgs/lujan.png" alt="Luján" class="location-image" />
-            <h2 class="location-name">Luján</h2>
+            <p class="location-name">Luján</p>
             <p class="location-description">Conocida como “La Tierra del Malbec”, se encuetra ubicada a orillas del Rio
               Mendoza. Esta región ha logrado posicionarse como uno de los destinos mas elegidos por los turistas ya que
               reune montaña, rios, viñedos y bodegas. Lujas de Cuyo, un clásico imperdible del Malbec.</p>
@@ -147,7 +149,7 @@
         <div class="carousel-item">
           <section class="location-container altamontaña">
             <img loading="lazy" src="./resources/imgs/altamontaña.png" alt="Alta Montaña" class="location-image" />
-            <h2 class="location-name">Alta Montaña</h2>
+            <p class="location-name">Alta Montaña</p>
             <p class="location-description">Mendoza te invita a explorar la majestuosidad de la Cordillera de los Andes.
               Recorre paisajes increíbles, descubre la flora y fauna autóctona...
               Experimentá la magia de la montaña.</p>
@@ -190,7 +192,7 @@
         <section class="option-column">
           <div class="vehicle-option">
             <h3 class="vehicle-title bold-text">Auto sedán</h3>
-            <img src="./resources/imgs/sedan.png" alt="Auto sedán" class="vehicle-image" />
+            <img src="./resources/imgs/sedan.png" alt="Auto sedán" class="vehicle-image1" />
             <div class="passenger-info-container">
               <img src="./resources/imgs/pasajeros.png" alt="pasajeros" class="passenger-icon" />
               <span class="passenger-info">4 pasajeros</span>
@@ -200,7 +202,7 @@
         <section class="option-column">
           <div class="vehicle-option">
             <h3 class="vehicle-title bold-text">Van pequeña</h3>
-            <img src="./resources/imgs/vanp.png" alt="Van pequeña" class="vehicle-image" />
+            <img src="./resources/imgs/vanp.png" alt="Van pequeña" class="vehicle-image2" />
             <div class="passenger-info-container">
               <img src="./resources/imgs/pasajeros.png" alt="pasajeros" class="passenger-icon" />
               <span class="passenger-info">7 pasajeros</span>
@@ -210,7 +212,7 @@
         <section class="option-column">
           <div class="vehicle-option">
             <h3 class="vehicle-title bold-text">Van mediana</h3>
-            <img src="./resources/imgs/vanm.png" alt="Van mediana" class="vehicle-image" />
+            <img src="./resources/imgs/vanm.png" alt="Van mediana" class="vehicle-image3" />
             <div class="passenger-info-container">
               <img src="./resources/imgs/pasajeros.png" alt="pasajeros" class="passenger-icon" />
               <span class="passenger-info">15 pasajeros</span>
@@ -220,7 +222,7 @@
         <section class="option-column">
           <div class="vehicle-option">
             <h3 class="vehicle-title bold-text">Van grande</h3>
-            <img src="./resources/imgs/vang.png" alt="Van grande" class="vehicle-image" />
+            <img src="./resources/imgs/vang.png" alt="Van grande" class="vehicle-image4" />
             <div class="passenger-info-container">
               <img src="./resources/imgs/pasajeros.png" alt="pasajeros" class="passenger-icon" />
               <span class="passenger-info">19 pasajeros</span>
@@ -230,12 +232,11 @@
       </div>
     </div>
     <section class="profile-container">
-      <div class="profile-wrapper">
         <div class="profile-content">
           <img src="./resources/imgs/freddy.png" alt="Profile Picture of Freddy" class="profile-image" />
           <div class="profile-info">
             <div class="profile-title">
-              <h2 class="profile-name">Freddy</h2>
+              <p class="profile-name">Freddy</p>
               <p class="profile-role">Chofer-guía</p>
               <div tabindex="0" role="button" class="contact-button" onclick="alert('Contactar Freddy')">
                 Contactar</div>
@@ -246,7 +247,6 @@
             </p>
           </div>
         </div>
-      </div>
     </section>
     <section class="contact-container">
       <h1 class="contact-title">Contactanos</h1>
@@ -267,15 +267,15 @@
           </div>
           <div class="info-box">
             <img class="contact-icons" src="./resources/imgs/calendaricon.png" alt="Calendario">
-            <input class="value-input" type="text" placeholder="Check-In" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input class="value-input" type="text" placeholder="Check-In dd/mm/aaaa">
           </div>
           <div class="info-box">
             <img class="contact-icons" src="./resources/imgs/calendaricon.png" alt="Calendario">
-            <input class="value-input" type="text" placeholder="Check-Out" onfocus="(this.type='date')" onblur="(this.type='text')">
+            <input class="value-input" type="text" placeholder="Check-Out dd/mm/aaaa">
           </div>
         </div>
         <div>
-          <input class="description-text" type="text" name="Comentario" placeholder="Comentario">
+          <textarea class="description-text" name="Comentario" placeholder="Hola! Mi nombre es ... y me gustaría hacer una reserva para ..."></textarea>
         </div>
         <button type="submit" class="query-button">Consultar</button>
       </form>

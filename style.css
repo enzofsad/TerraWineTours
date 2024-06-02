@@ -697,8 +697,26 @@
   border: none;
   border-radius: 15px;
   align-items: center;
-
   width: 100%;
+}
+
+.email-phone-desktop{
+  display: flex;
+}
+@media screen and (max-width: 1023px) {
+  .email-phone-desktop{
+    display: none;
+  }
+}
+
+.email-phone-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .email-phone-mobile{
+    display: flex;
+  }
 }
 
 .info-text {

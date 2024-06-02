@@ -20,9 +20,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav menu-items-container">
-          <a class="nav-link" aria-current="page" href="#">Wine Tours</a>
-          <a class="nav-link" href="#">Sobre Nosotros</a>
-          <a class="nav-link" href="#">Reservas</a>
+          <a class="nav-link" aria-current="page" href="#wine-tours">Wine Tours</a>
+          <a class="nav-link" href="#about-us">Sobre Nosotros</a>
+          <a class="nav-link" href="#reserve">Reservas</a>
           <div class="dropdown">
             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <a class="dropdown-item" href="./index.html"><img class="flag" src="./resources/imgs/spainflag.png"
@@ -46,14 +46,14 @@
         <div class="banner-headline">
           <h1 class="banner-title">Viví el malbec en <span class="highlighted">Mendoza.</span></h1>
           <p class="banner-subtitle">Una experiencia soñada por el <span class="strong">Valle de Uco.</span></p>
-          <div class="banner-button" tabindex="0" role="button">Reservar</div>
+          <div class="banner-button" tabindex="0" role="button" onclick="location.href='#reserve'">Reservar</div>
         </div>
       </div>
     </section>
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <section class="location-container maipu">
+          <section id="wine-tours" class="location-container maipu">
             <div class="location-item">
               <img loading="lazy" src="./resources/imgs/maipu.png" alt="Maipú" class="location-image" />
               <p class="location-name">maipú</p>
@@ -244,24 +244,24 @@
         </section>
       </div>
     </div>
-    <section class="profile-container">
+    <section id="about-us" class="profile-container">
       <div class="profile-content">
         <img src="./resources/imgs/freddymobile.png" alt="Profile Picture of Freddy" class="profile-image" />
         <div class="profile-info">
           <div class="profile-title">
             <p class="profile-name">Freddy</p>
             <p class="profile-role">Chofer-guía</p>
-            <div tabindex="0" role="button" class="contact-button-desktop" onclick="alert('Contactar Freddy')">Contactar</div>
+            <div tabindex="0" role="button" class="contact-button-desktop" onclick="location.href='#reserve'">Contactar</div>
           </div>
           <p class="profile-description">
             ... “Se precisan 5 factores para disfrutar el vino: Gastronomía, vinos, paisajes, compania, conversación”
             ... Vení a conocer! Los espero!
           </p>
-          <div tabindex="0" role="button" class="contact-button-mobile" onclick="alert('Contactar Freddy')">Contactar</div>
+          <button tabindex="0" role="button" class="contact-button-mobile" onclick="location.href='#reserve'">Contactar</button>
         </div>
       </div>
     </section>
-    <section class="contact-container">
+    <section id="reserve" class="contact-container">
       <h1 class="contact-title">Contactanos</h1>
       <form id="contact-form" action="https://formsubmit.co/415f7d633539f49468a18cd425eefaaf" method="post">
         <div class="info-section">
@@ -305,12 +305,12 @@
     <footer class="row align-items-center footer">
       <div class="col d-flex justify-content-center whatsapplogo">
         <img src="./resources/imgs/whatsapplogo.svg" alt="whatsapp logo">
-        <p class="socials">+549261000000</p>
+        <a href="https://wa.me/+5492615350596" target="_blank" class="socials">+5492615350596</a>
       </div>
       <img src="./resources/imgs/footerlogo.svg" alt="TerraFooterLogo" class="col footerlogo">
       <div class="col d-flex justify-content-center iglogo">
         <img src="./resources/imgs/iglogo.svg" alt="iglogo">
-        <p class="socials">terra_wine_tours</p>
+        <a href="https://www.instagram.com/terra_wine_tours?igsh=MWNib3NkYjJyZm5oMg==" target="_blank" class="socials">terra_wine_tours</a>
       </div>
     </footer>
     <section class="copyright">copyright © 2024 - todos los derechos reservados</section>
@@ -318,7 +318,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./script.js"></script>
   <div class="whatsapp-container">
-    <a href="#"><img
+    <a href="https://wa.me/+5492615350596" target="_blank"><img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c2b6903a565b033efeb2756c8e6de3655915779e2e7e2337dd8d2690ee999ed?apiKey=7ad39b1d7f1f400cb90757f83cf68a32&"
         alt="Product Image" class="whatsapp-image" loading="lazy" /></a>
   </div>

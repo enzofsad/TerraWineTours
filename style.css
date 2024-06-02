@@ -113,6 +113,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+  scroll-behavior: smooth;
 }
 
 .banner-container {
@@ -780,6 +781,7 @@
   margin: 2px 0 0 5px;
   color: #F4EEB8;
   font-family: "MontSerrat";
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1023px) {

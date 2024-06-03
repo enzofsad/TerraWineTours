@@ -407,6 +407,11 @@
   width: 100%;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
 .vehicle-container {
   display: flex;
   align-items: center;

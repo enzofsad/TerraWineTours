@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateFocus(index) {
     if (index === 0) {
-      image.style.transform = 'translateY(-24.5%) translateX(3%)';
+      image.style.transform = 'translateY(-24.5%)';
     } else if (index === 1) {
-      image.style.transform = 'translateY(-30%) translateX(3%)';
+      image.style.transform = 'translateY(-65%)';
     }
   }
 

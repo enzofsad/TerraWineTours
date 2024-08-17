@@ -255,7 +255,7 @@
   width: 100vw;
   object-fit: cover;
   transition: transform 0.5s ease-in-out;
-  translate: 0% 23%;
+  translate: 0% 21%;
 }
 
 .arrow {

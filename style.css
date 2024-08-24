@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 #navbar {
@@ -127,6 +128,7 @@
   height: 100%;
   transform-style: preserve-3d;
   z-index: -1;
+  scroll-snap-align: start;
 }
 @media screen and (max-width: 1023px) {
   .banner-container{
@@ -279,7 +281,9 @@
 .arrow.right {
   right: 50px;
 } */
-
+.snap-container {
+  scroll-snap-type: y mandatory;
+}
 .map-container {
   position: relative;
   height: 80vh;
@@ -287,11 +291,27 @@
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-snap-align: center;
+}
+.map-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .map-container{ 
+    height: 60vh;
+  }
 }
 
 .map-container img{
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 1023px) {
+  .map-container img{
+    height: 100%;
+    scale: 1.2;
+  } 
 }
 
 .highlighted {
@@ -482,6 +502,7 @@
   align-items: center;
   justify-content: center;
   height: 370px;
+  scroll-snap-align: start;
 }
 
 @media screen and (max-width: 1023px) {
@@ -847,6 +868,7 @@
   height: 370px;
   width: 100%;
   margin: 0;
+  scroll-snap-align: start;
 }
 @media screen and (max-width: 1023px) {
   .footer{
@@ -900,4 +922,11 @@
   align-items: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 1023px) {
+  .formulario{ 
+    height: 1320px;
+  }
 }

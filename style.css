@@ -230,7 +230,7 @@
   object-position: center;
 }
 
-.carousel {
+/* .carousel {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -270,14 +270,28 @@
   cursor: pointer;
   padding: 10px;
   z-index: 100;
-}
-
-.arrow.left {
+} */
+ 
+/* .arrow.left {
   left: 50px;
 }
 
 .arrow.right {
   right: 50px;
+} */
+
+.map-container {
+  position: relative;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.map-container img{
+  width: 100%;
+  height: auto;
 }
 
 .highlighted {
@@ -880,3 +894,10 @@
   padding: 12px;
 }
 
+.aver{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

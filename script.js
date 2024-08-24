@@ -11,7 +11,7 @@ document.getElementById('content').onscroll = function () {
   prevScrollPos = currentScrollPos;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => {
   const image = document.querySelector('.carousel-item img');
   const positions = ['top', 'bottom'];
   let currentIndex = 0;
@@ -36,3 +36,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateFocus(currentIndex);
 });
+ */

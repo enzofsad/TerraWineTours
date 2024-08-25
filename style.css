@@ -299,7 +299,8 @@
 
 @media screen and (max-width: 1023px) {
   .map-container{ 
-    height: 60vh;
+    height: 80vh;
+    overflow-x: scroll;
   }
 }
 
@@ -307,11 +308,11 @@
   width: 100%;
   height: auto;
 }
+
 @media screen and (max-width: 1023px) {
-  .map-container img{
-    height: 100%;
-    scale: 1.2;
-  } 
+  .map-container img{ 
+    width: 180%;
+  }
 }
 
 .highlighted {
